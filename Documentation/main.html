@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="body-container">
+    <nav id="navbar">
+        <header id="nav-header">
+            <h1>
+                Git 101
+            </h1>
+        </header>
+        <div class="nav-link-container">
+                <a href="#Version_Control" class="nav-link">
+                    <h2>
+                        Version Control
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Git_Status" class="nav-link">
+                    <h2>
+                        Git Status
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Git_Init" class="nav-link">
+                    <h2>
+                        Git Init
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Add_File" class="nav-link">
+                    <h2>
+                        Add File
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Commit" class="nav-link">
+                    <h2>
+                        Commit
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Push" class="nav-link">
+                    <h2>
+                        Push
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Command_Line" class="nav-link">
+                    <h2>
+                        Command Line
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-link-container">
+                <a href="#Github" class="nav-link">
+                <h2>
+                    Github
+                </h2>
+                </a>
+            </div>
+        <!--    <div class="nav-link">
+                <a href="#9">5</a>
+            </div>
+            <div class="nav-link">
+                <a href="#10">5</a>
+            </div>
+            <div class="nav-link">
+                <a href="#11">5</a>
+            </div>
+        -->
+    </nav>
+    <main id="main-doc">
+        <header id="main-header">
+            <h1>
+                Git 101
+            </h1>
+        </header>
+        <section id="Version_Control" class="main-section">
+            <header>
+                <h2>
+                    Version Control
+                </h2>
+            </header>
+        
+                <p>
+                    Version control allows you to keep track of changes made to a file and allows past versions to be recovered easily. Git is a distributed version control system that gives each user a full copy of a centralized repository. This means that in the event of an issue with the central copy (or one of the users' copies), it can be easily reverted or checked for the time and user who made those changes.
+                </p>
+            <!--    <p>
+                    <code>
+                        <li></li>
+                    </code>
+                </p>
+            at least 10 p, 5 code, 5 li total -->
+
+        </section>
+        <section id="Git_Status" class="main-section">
+            <header>
+                <h2>
+                    Git Status
+                </h2>
+            </header>
+                <p>
+                    <code>git status</code> will return all the basic information you need to know about your branch file, including:
+                    <ul>
+                        <li>the current branch</li>
+                        <li>whether that branch is up to date with the master copy</li>
+                        <li>any untracked files</li>
+                        <li>uncommitted changes</li>
+                        <li>the commands to track and commit any changed (in case you don't remember)</li>
+                    </ul> 
+                </p>
+        </section>
+
+       
+        <section id="Git_Init" class="main-section">
+            <header>
+                <h2>
+                    Git Init
+                </h2>
+            </header>
+        
+            <p>
+                <code>git init</code> will initialize the current directory as a local Git repository.
+                You can then use <code>git remote add origin <"remote repository url"></code> to set the local repository as the source for the remote repository.
+            </p>
+            <p>
+                You can check if your source is set up correctly with the command <code>git remote -v</code> and checking that it returns the remote repository's url.
+            </p>
+        </section>
+
+        <section id="Add_File" class="main-section">
+            <header>
+                <h2>
+                    Add File
+                </h2>
+            </header>
+
+            <p>
+                <code>add file <"filename"></code> will add the named file to your local staging area.
+            </p>
+        </section>
+
+        <section id="Commit" class="main-section">
+            <header>
+                <h2>
+                    Commit
+                </h2>
+            </header>
+            <p>
+                <code>git commit</code> will commit your staged changes to your local copy of the repository.
+            </p>
+        </section>
+
+        <section id="Push" class="main-section">
+            <header>
+                <h2>
+                    Push
+                </h2>
+            </header>
+        
+            <p>
+                <code>git push <"local_branch_name"> <"repository name"></code> will push your local changes to the central repository.
+            </p>
+        </section>
+
+        <section id="Command_Line" class="main-section">
+            <header>
+                <h2>
+                    Command Line
+                </h2>
+            </header>
+            <p>
+                Some generally useful commands:
+                <ul>
+                    <li>
+                        <code>cd <"directory_name"> </code> - change the current directory to the child or parent "directory_name"
+                    </li>
+                    <li>
+                        <code>pwd</code> - path of working directory
+                    </li>
+                    <li>
+                        <code>ls</code> - lists directory contents
+                    </li>
+                </ul>
+            </p>
+        </section>
+        
+        <section id="Github" class="main-section">
+            <header>
+                <h2>
+                    Github
+                </h2>
+            </header>
+            <p>
+                Github is the primary remote repository used with Git. To create a new repository, simply go to your account's repository tab and click new repository.
+                Then once you've configured it to your liking, hit create and then use the new repository's url in the <code>git remote add origin</code> command.
+            </p>
+        </section>
+    
+    </main>
+</div>
+</body>
+</html>

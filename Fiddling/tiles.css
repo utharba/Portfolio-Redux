@@ -1,0 +1,45 @@
+#tile-container {
+height: 200px;
+width: 200px;
+display: grid;
+grid-template-columns: 100px 100px;
+grid-template-rows: 100px 100px;
+grid-template-areas: "pos1 pos2" "pos3 pos4";
+}
+
+.tile {
+    height: 100px;
+    width: 100px;
+}
+
+#pos1 {
+    grid-area: pos2;
+}
+
+#pos2 {
+    grid-area: pos2;
+}
+
+#pos3 {
+    grid-area: pos3;
+}
+
+#pos4 {
+    grid-area: pos4;
+}
+
+#tile1 {
+    background-color: red;
+}
+
+#tile2 {
+    background-color: blue;
+}
+
+#tile3 {
+    background-color: green;
+}
+
+#tile4 {
+    background-color: black;
+}
