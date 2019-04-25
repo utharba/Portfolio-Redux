@@ -1,9 +1,17 @@
-function tileMove (pos1,pos2,pos3,pos4) {
+function tileMove (pos1,pos2,pos3,posBlank,tiles) {
     var pos1 = "#pos1";
     var pos2 = "#pos2";
     var pos3 = "#pos3";
-    var pos4 = "#pos4";
+    var posBlank = "#pos4";
 
+    var tileList = document.getElementsByClassName(".tile");
+    
+    
+
+    var i;
+    for (i = 0; i < x)
     
 }
-document.getElementById("tile1").addEventListener("onclick", tileMove);
+document.getElementsByClassName("tile").addEventListener("onclick", tileMove);
+
+console.log(document.getElementsByClassName("tile"))
