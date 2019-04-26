@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: aqua; 
+    display: grid;
+    grid-template-rows: 10vh auto;
+    grid-template-areas: "nav-main" "popup";
+    grid-template-columns: ;
+}
+
+nav ul {
+    grid-area: nav-main;
+    text-align: center;
+    
+}
+
+#welcome {
+    background-color: cadetblue;
+    height: 50vh;
+    padding-top: 40vh;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#main-container * {
+    width: 100vw;
+    text-align: center;
+}

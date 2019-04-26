@@ -7,21 +7,21 @@
 <body>
     <div id="tile-container">
         <div class="tile-space" id="pos1">
-                <div class="tile" id="tile1">
+                <div class="tile" id="tile1" onclick="moveTile1(tile,blankTile)">
 
                 </div>
         </div>
-        <div class="tile-space">
+        <div class="tile-space" id="pos2">
                 <div class="tile" id="tile2">
 
                 </div>
         </div>
-        <div class="tile-space" >
+        <div class="tile-space" id="pos3">
                 <div class="tile" id="tile3">
 
                 </div>
         </div>
-        <div class="tile-space">
+        <div class="tile-space" id="pos4">
                 <div class="tile" id="tile4">
 
                 </div>
@@ -29,5 +29,14 @@
 
         
     </div>
-   <script src="tiles.js"></script>
+   <script >
+        function moveTile1 (tile, blankTile) {
+
+        var tile = document.getElementById("pos1").childNodes;
+        var blankTile = document.getElementById("pos4").childNodes;
+
+        document.getElementById("pos1").replaceChild(blankTile);
+        document.getElementById("pos4").replaceChild(tile);
+                };
+   </script>
 </body>

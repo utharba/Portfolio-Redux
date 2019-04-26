@@ -13,7 +13,7 @@ grid-template-areas: "pos1 pos2" "pos3 pos4";
 }
 
 #pos1 {
-    grid-area: pos2;
+    grid-area: pos1;
 }
 
 #pos2 {
