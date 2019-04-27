@@ -2,16 +2,27 @@ const review0 = {
     title0: "js title",
     review0:'i purchased this binary star system after i was inspired by seeing a solar eclipse and although i had some problems getting the accretion started it\'s now on track to become a nice, healthy X-ray pulsar. nobody told me this thing was magnetic, though!'
 }
-var review = [
-    review0,
+var reviewArr = [
     {
-        title1: "title1",
-        review1: "review1"
+        name: "Astrid",
+        title: "title",
+        review: "review1"
     }
-];
+]
+function addReview () {
+    var reviewForm = {};
+        reviewForm.reviewName = document.getElementById("reviewName").value;
+        reviewForm.reviewTitle = document.getElementById("reviewTitle").value;
+        reviewForm.reviewBody = document.getElementById("reviewBody").value;
+        reviewArr.push(reviewForm);
 
-document.getElementById("title0").innerHTML = review[0]["title0"];
-document.getElementById("review0").innerHTML = review[0]["review0"];
+        console.log(reviewForm);
+        console.log(reviewArr);
+    for (var i = 0; i < reviewArr.length; i++) {
+            document.getElementById("title0").innerHTML = reviewArr[i].reviewTitle;
+            document.getElementById("review0").innerHTML = reviewArr[i].reviewBody;
+    }
+}
 
-console.log(review0);
-console.log(review);
+
+
