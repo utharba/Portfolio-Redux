@@ -1,3 +1,7 @@
+html {
+    max-width: 100vw;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -40,10 +44,16 @@ nav {
     justify-content: space-around;
 }
 
+#contact {
+    width: 100%;
+}
+
+
 #welcome {
     background-color: hsl(182, 25%, 50%);
     height: 60vh;
     padding-top: 40vh;
+    width: 100vw;
 }
 
 #main-container {
@@ -56,7 +66,6 @@ nav {
 }
 
 #main-container * {
-    width: 100vw;
     text-align: center;
 }
 
@@ -65,7 +74,7 @@ nav {
 }
 
 .project-tile h2 {
-    padding: 3vh 0;
+    padding: 5px 0;
 }
 
 #contact {
@@ -91,10 +100,46 @@ nav {
     color: hsl(182, 75%, 90%);
 }
 
+
 @media (min-width: 700px) {
     #tile-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "1/1 1/2" "2/1 2/2" "3/1 3/2";
+        width: 100vw;
+        justify-items: center;
     }
+
+    #welcome-section {
+        width: 100vw;
+    }
+
+    .project-tile {
+        width: 90%;
+        padding: 0;
+        border-color: black;
+    }
+
+    #projects {
+        width: 100vw;
+    }
+
+    #tile1 {
+        grid-area: 1/1;
+    }
+
+    #tile2 {
+        grid-area: 1/2;
+    }
+
+    #tile3 {
+        grid-area: 2/1;
+    }
+
+
+}
+
+.codepen {
+    width: 100%;
 }
