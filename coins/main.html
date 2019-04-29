@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body onload="coinVol();">
+    <form action="" id="mattressCash" onsubmit="bestCoins(); return false">
+        <label for="cash">How much ya got?</label>
+        <input type="text" min="0" required pattern="^[0-9]+(\.[0-9]{1,2})?$" id="cash" title="Cents only gets two decimal places!" placeholder="Enter an amount">
+        </input>
+        <button type="submit">Submit</button>
+
+        
+    </form>
+</body>
+<script src="coins.js"></script>
+</html>
